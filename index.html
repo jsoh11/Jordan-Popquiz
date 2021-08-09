@@ -14,16 +14,23 @@
     <section class="timer">Timer:</section>
 </header>
 <body>
-
-    <section  class="container">
-        <p class="question"></p>
-        <button class="answer"></button>
-        <button class="answer"></button>
-        <button class="answer"></button>
-        <button class="answer"></button>
+    
+    <section class="container">
+        <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-btns" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        </div>
+        <section class="controls">
+            <button id="start" class="start-btn">Start</button>
+            <button id="restart" class="restart-btn">Restart</button>
+        </section>
     </section>
         
-
     <script src="./script.js"></script>
 </body>
 </html>
