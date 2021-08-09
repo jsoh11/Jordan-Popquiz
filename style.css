@@ -1,0 +1,38 @@
+body{
+    background-color:  white;
+    min-height: 100vh;
+}
+
+header {
+
+}
+
+.highscore{
+    
+}
+
+.timer {
+    position: absolute;
+    right: 80px;
+    top: 0px;
+    font: bolder;
+    padding: 10px;
+}
+
+.container{
+position: absolute;
+top: 40%;
+right: 50%;
+}
+
+.question {
+
+}
+
+.answer {
+display: block;
+padding: 10px;
+margin: 50px;
+left: 30%;
+}
+
