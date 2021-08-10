@@ -1,34 +1,50 @@
 let startButton = document.querySelector(".start-btn");
 let restartEl = document.querySelector(".restart-btn");
 let questionContainerEl = document.querySelector("#question-container");
-let questionEl = document.getElementById(".question");
-let answerButtonEl = document.getElementById("#answer-btns");
-let timerEl = document.querySelector("#timer-count")
+let questionEl = document.querySelector(".question");
+let answerButtonEl = document.querySelector("#answer-btns");
+let timerEl = document.querySelector("#timer-count");
 startButton, addEventListener("click", startGame);
 
+
 let timer;
-let currentQuestion = {}
+let currentQuestion = {};
+
+
 
 let questionsOptions = [
     {
         question: "what is 2+2?",
-        answers: ["4", "18", "76", "9"],
-        key: "0"
+        choice1: "2",
+        choice2: "4",
+        choice3: "6",
+        choice4: "8",
+        correctChoice: "4"
+        
     },
     {
         question: "What color is the sky?",
-        answer: ["Red", "yellow", "blue", "47"],
-        key: 2,
+        choice1: "blue",
+        choice2: "yellow",
+        choice3: "24",
+        choice4: "neon pink",
+        correctChoice: "blue"
     },
     {
         question: "A ____ is a true/false statement.",
-        answer: ["String", "Number", "Boolean", "33"],
-        key: 2,
+        choice1: "Array",
+        choice2: "47",
+        choice3: "Boolean",
+        choice4: "Javascript",
+        correctChoice: "Boolean"
     },
     {
         question: "How many states are in the in United States?",
-        answer: ["30", "40", "50", "60"],
-        key: 2,
+        choice1: "20",
+        choice2: "30",
+        choice3: "79",
+        choice4: "50",
+        correctChoice: "50"
     }
 ]
 let questionIndex = Math.floor(Math.random() * questionsOptions.length)
@@ -48,7 +64,6 @@ function startGame() {
 
 function nextQuestion() {
 question.innerText = currentQuestion.question
-answer.innerText = questionsOptions.answer
 
 }
 
