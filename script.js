@@ -82,7 +82,7 @@ function setTime() {
         if (timerCount === 0) {
             clearInterval(timer);
         }
-    }, 10);
+    }, 10000);
 
 }
 
